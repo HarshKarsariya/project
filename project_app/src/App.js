@@ -90,7 +90,8 @@ export default function App() {
     setNewUserData(newUser.data);
     setIsNewUserModalOpen(false)
   }
-  console.log(newUserData);  
+  console.log(newUserData);
+
   return (
     <Stack spacing={3} style={{alignItems : "center" , backgroundColor:"rgb(45, 44, 44)"}}>
       <TableContainer component={Paper}>
