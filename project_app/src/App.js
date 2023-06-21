@@ -87,10 +87,9 @@ export default function App() {
 
   const handleAddNewUser = async () => {
     const newUser = await axios.post(`https://dummyjson.com/users/add`,newUserData) 
-    setNewUserData(newUser.data);
+    console.log(newUser.data);
     setIsNewUserModalOpen(false)
   }
-  console.log(newUserData);
 
   return (
     <Stack spacing={3} style={{alignItems : "center" , backgroundColor:"rgb(45, 44, 44)"}}>
